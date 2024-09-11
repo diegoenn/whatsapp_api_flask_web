@@ -2,6 +2,8 @@
 Este es un proyecto basado en la documentacion de developers de meta
 en el cual se pueden enviar mensajes de whatsapp a trave del API de whatsapp
 y se crea una aplicacion web en el cual por cada click que se hace se envia un mensaje a traves de whatsapp
+para iniciar la aplicacion se debe correr este comando en la terminal
+# flask run
 
 #primeros pasos para activar el entorno virtual de python
 
