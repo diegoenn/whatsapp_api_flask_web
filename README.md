@@ -30,17 +30,17 @@ pip3 --version en mac or pip --version en windows
 # ####################################################################
 ## crear, habilitar y sincronizar el repositorio de git
 
-## clonar el repositorio desde github a local se hace con 
+### clonar el repositorio desde github a local se hace con 
 git clone url_repositorio_remoto
 
-## configura nombre y correo de la cuenta git
+### configura nombre y correo de la cuenta git
 git config --global user.name "Diego"
 git config --global user.email "diegoenn@gmail.com"
 
-## luego dentro de la carpeta del proyecto iniciar un repositorio git
+### luego dentro de la carpeta del proyecto iniciar un repositorio git
 git init
 
-## para hacer commits usar los siguientes comandos
+### para hacer commits usar los siguientes comandos
 git status
 git branch
 git checkout nombre_branch
@@ -48,7 +48,7 @@ git add .
 git commit -m "mensaje del commit"
 git push origin nombre_branch
 
-## agrega un repositorio remoto de github a la consola local, debe hacerse dentro de la carpeta local
+### agrega un repositorio remoto de github a la consola local, debe hacerse dentro de la carpeta local
 git remote add origin url_rositorio_github
 git remote -v
 git log
