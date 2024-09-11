@@ -59,12 +59,13 @@ git log
 ## crear un entorno virtual
 
 comando para crear un entorno virtual dentro de la carpeta del proyecto
-python3 -m venv env
+python3 -m venv venv
 o si se quiere configurar con una version especifica de python en el entorno virtual usar el siguiente comando
 py -3.11 -m venv venv
+py -3.12 -m venv venv
 
 comando para activar un entorno virtual dentro de la carpeta del proyecto
-source env/bin/activate en mac or env/scripts/activate en windows
+source env/bin/activate en mac or .\venv\Scripts\activate en windows
 comando para desactivar un env virtual
 deactivate
 comando para listar librerias instaladas en python dentro del entorno
@@ -75,20 +76,40 @@ mirando la ruta y el nombre del entorno que aparece en parentesis
 # ############################################################################
 ## instalando paquetes
 
+### En Windows
 comando para instalar flask
-pip install flask[async] en windows or pip install flask async en mac pip install "Flask[async]"
-comando para correr flask
-flash run
+pip install flask[async]
+
 comando para instalar aiohttp libreria para manejo de comunicaciones asyncronas como whatsapp
-pip install aiohttp[speedups] en windows or pip install aiohttp en mac
+pip install aiohttp[speedups] 
 comando para instalar psycopg2 que sirve para conectarse a db postgress
-pip install psycopg2 en windows or pip install psycopg2-binary en mac
+pip install psycopg2
 comando para instalar libreria para poder manejar variables globales en python
 pip install python-dotenv
 
+restarurar certificados ssl
+pip install --upgrade certifi
+
+### En MAC OS
+
+comando para instalar flask
+pip install flask async en mac pip install "Flask[async]"
+
+comando para instalar aiohttp libreria para manejo de comunicaciones asyncronas como whatsapp
+pip install aiohttp 
+comando para instalar psycopg2 que sirve para conectarse a db postgress
+pip install psycopg2-binary
+comando para instalar libreria para poder manejar variables globales en python
+pip install python-dotenv
+
+### instalando la aplicacion desde requirements.txt
 par instalar todas los paquetes requeridos desde el archivo requirements.txt lanzar el siguiente comando
 para ello se debe tener el listado de paquetes escrito en ese archivo
 `pip install -r requirements.txt`
+
+### corriendo la aplicacion
+comando para correr flask
+flask run
 
 # ############################################################################
 ## instalacion de base de datos
