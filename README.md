@@ -33,6 +33,9 @@ comando para ingresar a una carpeta en en computador llamada myproject
 - clonar el repositorio desde github a local se hace con 
 `git clone url_repositorio_remoto`
 
+- antes de empezar a modificar el codigo en local asegurarse de cargar la ultima version de github
+`git pull url_repositorio_remoto`
+
 - configura nombre y correo de la cuenta git
 `git config --global user.name "Diego"`
 `git config --global user.email "diegoenn@gmail.com"`
@@ -65,7 +68,7 @@ o si se quiere configurar con una version especifica de python en el entorno vir
 `py -3.12 -m venv venv`
 
 - comando para activar un entorno virtual dentro de la carpeta del proyecto
-`source env/bin/activate` en mac or `.\venv\Scripts\activate` en windows
+`source venv/bin/activate` en mac or `.\venv\Scripts\activate` en windows
 - comando para desactivar un env virtual
 `deactivate`
 - comando para listar librerias instaladas en python dentro del entorno
@@ -79,28 +82,32 @@ mirando la ruta y el nombre del entorno que aparece en parentesis
 ### En Windows
 - comando para instalar flask
 `pip install flask[async]`
-
 - comando para instalar aiohttp libreria para manejo de comunicaciones asyncronas como whatsapp
 `pip install aiohttp[speedups]`
 - comando para instalar psycopg2 que sirve para conectarse a db postgress
 `pip install psycopg2`
 - comando para instalar libreria para poder manejar variables globales en python
 `pip install python-dotenv`
-
 - restarurar certificados ssl
 `pip install --upgrade certifi`
 
 ### En MAC OS
 
 - comando para instalar flask
-pip install flask async en mac `pip install "Flask[async]"`
-
+`pip install "Flask[async]"` `pip install flask async`
 - comando para instalar aiohttp libreria para manejo de comunicaciones asyncronas como whatsapp
+`pip install aiohttp[speedups]`
+
+ o instalar los siguientes modulos independientes tiene el mismo efecto que el comando anterior
 `pip install aiohttp`
+`pip install aiodns`
+`pip install Brotli`
 - comando para instalar psycopg2 que sirve para conectarse a db postgress
 `pip install psycopg2-binary`
 - comando para instalar libreria para poder manejar variables globales en python
 `pip install python-dotenv`
+- restarurar certificados ssl
+`pip install --upgrade certifi`
 
 ### instalando la aplicacion desde requirements.txt
 - par instalar todas los paquetes requeridos desde el archivo requirements.txt lanzar el siguiente comando

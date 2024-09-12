@@ -1,22 +1,21 @@
 # paquetes requeridos para que la aplicacion funcione
-
-# entorno virtual env_whatsapp: python3 -m venv env_whatsapp
-# activar entonrno virtual: . env_whatsapp/bin/activate
-# desactivar entorno virtual: deactivate
-
-# python version 3.12.4: python3 --version
-# pip version 24.2: pip list
-# restarurar certificados ssl: pip install --upgrade certifi
-
-# listar paquetes instalados en el entorno: pip list
-# actualizar a la ultima version de pip: pip install --upgrade pip
-
-# instalar flask micro web framework : pip install "flask[async]"
-
-# comunicaciones asincronas: pip install aiohttp[speedups]
-# o instar los siguientes modulos independientes tiene el mismo efecto que el comando anterior
-# pip install aiohttp
-# pip install aiodns
-# pip install Brotli
-
-# esta pendiente que llege un mensaje tipo template con un link de un archivo pdf xxxxxxxx
+aiohappyeyeballs==2.4.0
+aiohttp==3.10.5
+aiosignal==1.3.1
+asgiref==3.8.1
+async==0.6.2
+attrs==24.2.0
+blinker==1.8.2
+click==8.1.7
+Flask==3.0.3
+frozenlist==1.4.1
+idna==3.8
+itsdangerous==2.2.0
+Jinja2==3.1.4
+MarkupSafe==2.1.5
+multidict==6.1.0
+pip==24.2
+psycopg2-binary==2.9.9
+python-dotenv==1.0.1
+Werkzeug==3.0.4
+yarl==1.11.1
