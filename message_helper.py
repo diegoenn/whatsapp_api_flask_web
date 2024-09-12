@@ -2,6 +2,7 @@ import aiohttp
 import json
 from flask import current_app
 
+# se envie el mensaje de la variable data desde la aplicacion hace el destinatario de whatsapp
 async def send_message(data):
   headers = {
     "Content-type": "application/json",
@@ -24,6 +25,7 @@ async def send_message(data):
     except aiohttp.ClientConnectorError as e:
       print('Connection Error', str(e))
 
+# se arma el mensaje en el formato de envio de mensajes simples a destinatario whatsapp
 def get_text_message_input(recipient, text):
   return json.dumps({
     "messaging_product": "whatsapp",
@@ -36,6 +38,7 @@ def get_text_message_input(recipient, text):
     }
   })
 
+# se arma el mensaje en el formato de envio de plantilla de mensajes a destinatario whatsapp
 def get_templated_message_input(recipient, flight):
   return json.dumps({
     "messaging_product": "whatsapp",

@@ -94,7 +94,8 @@ mirando la ruta y el nombre del entorno que aparece en parentesis
 ### En MAC OS
 
 - comando para instalar flask
-`pip install "Flask[async]"` `pip install flask async`
+`pip install "flask[async]"` `pip install flask async`
+y con este comando puedes validar como quedo instalado `python -m flask --version`
 - comando para instalar aiohttp libreria para manejo de comunicaciones asyncronas como whatsapp
 `pip install aiohttp[speedups]`
 
