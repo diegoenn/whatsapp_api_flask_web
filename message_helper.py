@@ -45,40 +45,9 @@ def get_templated_message_input(recipient, flight):
     "to": recipient,
     "type": "template",
     "template": {
-      "name": "sample_flight_confirmation",
+      "name": "hello_world",
       "language": {
         "code": "en_US"
-      },
-      "components": [
-        {
-          "type": "header",
-          "parameters": [
-            {
-              "type": "document",
-              "document": {
-                "filename": "FlightConfirmation.pdf",
-                "link": flight['document']
-              }
-            }
-          ]
-        },
-        {
-          "type": "body",
-          "parameters": [
-            {
-              "type": "text",
-              "text": flight['origin']
-            },
-            {
-              "type": "text",
-              "text": flight['destination']
-            },
-            {
-              "type": "text",
-              "text": flight['time']
-            }
-          ]
-        }
-      ]
+      }
     }
   })
